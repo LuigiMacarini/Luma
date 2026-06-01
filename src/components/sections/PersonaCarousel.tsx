@@ -12,7 +12,7 @@ export function PersonaCarousel() {
         Para qual fase da sua vida?
       </h2>
 
-      <div className="no-scrollbar -mx-5 flex gap-6 overflow-x-auto px-5 pb-2 md:justify-center">
+      <div className="no-scrollbar -mx-5 flex gap-6 overflow-x-auto px-5 pb-2 md:justify-center pt-2" >
         {personas.map((p) => (
           <button
             key={p.label}

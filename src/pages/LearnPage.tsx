@@ -170,7 +170,7 @@ export function LearnPage() {
       <Section className="px-5 md:px-8" innerClassName="">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-5 rounded-[var(--radius-card)] bg-primary px-6 py-10 text-center md:flex-row md:justify-between md:text-left">
           <div>
-            <h2 className="font-heading text-2xl text-white md:text-3xl">
+            <h2 className="font-heading text-2xl !text-white md:text-3xl">
               Ficou com duvidas sobre o seu corpo?
             </h2>
             <p className="mt-2 text-accent">

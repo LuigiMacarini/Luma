@@ -7,7 +7,7 @@ export function FinalCTA() {
   return (
     <Section className="bg-primary py-16 md:py-24" innerClassName="grid items-center gap-12 lg:grid-cols-2">
       <div className="text-center lg:text-left">
-        <h2 className="font-heading text-4xl text-white md:text-5xl">
+        <h2 className="font-heading text-4xl md:text-5xl !text-white">
           Comece a se entender hoje.
         </h2>
         <p className="mt-4 text-lg text-accent">Baixe o Luma gratuitamente.</p>
