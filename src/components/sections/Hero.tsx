@@ -51,26 +51,26 @@ export function Hero() {
         <FloatingLabel
           text="Ginecologista"
           avatarTone="bg-accent"
-          className="left-3 top-4 md:left-6"
+          className="left-2 top-3 md:left-6 md:top-4"
           delay={0.3}
         />
         <FloatingLabel
           text="Psicologa"
           avatarTone="bg-secondary/50"
-          className="left-1/2 top-2 -translate-x-1/2"
+          className="right-2 top-3 md:left-1/2 md:right-auto md:top-2 md:-translate-x-1/2"
           delay={0.6}
         />
         <FloatingLabel
           text="Nutricionista"
           avatarTone="bg-lime/60"
-          className="right-3 top-4 md:right-6"
+          className="right-2 top-16 md:left-auto md:right-6 md:top-4"
           delay={0.9}
         />
         <FloatingLabel
           text="IA Integrada"
           variant="primary"
           icon={<Chip width={16} height={16} />}
-          className="bottom-5 left-3 md:left-6"
+          className="bottom-5 left-2 md:left-6"
           delay={1.2}
         />
       </div>

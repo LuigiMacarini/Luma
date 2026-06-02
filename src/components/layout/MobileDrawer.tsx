@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { navItems } from "../../data/navigation";
 import { Button } from "../ui/Button";
@@ -13,6 +13,16 @@ interface MobileDrawerProps {
 
 export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
   const [expanded, setExpanded] = useState<number | null>(0);
+
+  // Trava o scroll da pagina enquanto o drawer esta aberto (evita scroll chaining).
+  useEffect(() => {
+    if (!open) return;
+    const { overflow } = document.body.style;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = overflow;
+    };
+  }, [open]);
 
   return (
     <>
@@ -48,7 +58,7 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
           </button>
         </div>
 
-        <nav className="flex-1 overflow-y-auto px-2 py-3">
+        <nav className="flex-1 overflow-y-auto overscroll-contain px-2 py-3">
           {navItems.map((item, i) => {
             const isOpen = expanded === i;
             return (

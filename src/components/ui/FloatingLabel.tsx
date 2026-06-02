@@ -28,7 +28,7 @@ export function FloatingLabel({
   return (
     <div
       className={cn(
-        "floating-label absolute z-10 flex items-center gap-2 rounded-[var(--radius-pill)] px-3 py-1.5 shadow-[var(--shadow-soft)] backdrop-blur-sm",
+        "floating-label absolute z-10 flex items-center gap-1.5 rounded-[var(--radius-pill)] px-2.5 py-1 shadow-[var(--shadow-soft)] backdrop-blur-sm md:gap-2 md:px-3 md:py-1.5",
         isPrimary ? "bg-primary text-white" : "bg-white text-ink",
         className
       )}
@@ -36,13 +36,15 @@ export function FloatingLabel({
     >
       <span
         className={cn(
-          "flex h-7 w-7 shrink-0 items-center justify-center rounded-full",
+          "flex h-6 w-6 shrink-0 items-center justify-center rounded-full md:h-7 md:w-7",
           isPrimary ? "bg-white/20 text-white" : avatarTone
         )}
       >
         {icon}
       </span>
-      <span className="text-sm font-semibold whitespace-nowrap">{text}</span>
+      <span className="text-xs font-semibold whitespace-nowrap md:text-sm">
+        {text}
+      </span>
     </div>
   );
 }

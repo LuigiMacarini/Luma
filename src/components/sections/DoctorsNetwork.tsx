@@ -6,21 +6,26 @@ import { Placeholder } from "../ui/Placeholder";
 import { FloatingLabel } from "../ui/FloatingLabel";
 
 const imageLabels = [
-  { text: "Ginecologista", tone: "bg-accent", className: "left-4 top-5" },
+  {
+    text: "Ginecologista",
+    tone: "bg-accent",
+    className: "left-2 top-3 md:left-4 md:top-5",
+  },
   {
     text: "Psicologa",
     tone: "bg-secondary/50",
-    className: "left-1/3 top-3 -translate-x-1/2",
+    className: "right-2 top-3 md:left-1/3 md:right-auto md:-translate-x-1/2",
   },
   {
     text: "Nutricionista",
     tone: "bg-lime/60",
-    className: "right-1/3 top-3 translate-x-1/2",
+    className:
+      "bottom-3 left-2 md:left-auto md:right-1/3 md:bottom-auto md:top-3 md:translate-x-1/2",
   },
   {
     text: "Endocrinologista",
     tone: "bg-primary/20",
-    className: "right-4 bottom-5",
+    className: "right-2 bottom-3 md:right-4 md:bottom-5",
   },
 ];
 
